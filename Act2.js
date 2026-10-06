@@ -3,7 +3,7 @@
 // ==========================================
 
 // 3 VARIABLES / PROPERTIES
-let schoolName = "NWSS University";
+let schoolName = "NWSS University Main Campus";
 let schoolYear = 2026;
 let passingGrade = 75;
 
