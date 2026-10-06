@@ -141,7 +141,7 @@ class Course {
 
 const student1 = new Student("Shaina", 21, "ST001");
 
-const student2 = new Student("Maria", 20, "ST002");
+const student2 = new Student("Maria", 19, "ST002");
 
 const teacher1 = new Teacher("Mr. Yuri", 25, "CSElec1");
 
