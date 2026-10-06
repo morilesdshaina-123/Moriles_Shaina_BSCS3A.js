@@ -3,14 +3,14 @@
 //==================================
 
 //-------VARIABLES-------
-let schoolName = "NWSSU";
+let schoolName = "NWSS University";
 let studentName = "Shaina D. Moriles";
 let studentAge = 21;
 
 //-------ARRAYS-------
 let subjects = ["JavaScript", "Professional Elective1", "Mobile Programming"];
 let grades = [85, 79, 90];
-let students = ["Shaina", "Maria", "camell"];
+let students = ["Shaina", "Maria", "Camell"];
 
 //-------CONDITIONALS-------
 if (grades[0] >= 75) {
