@@ -152,7 +152,7 @@ const course1 = new Course("Professional Elective 1", 3);
 // ENCAPSULATION
 // ==========================================
 
-student1.setGrade(88);
+student1.setGrade(90);
 
 console.log("Student Grade:", student1.getGrade());
 
