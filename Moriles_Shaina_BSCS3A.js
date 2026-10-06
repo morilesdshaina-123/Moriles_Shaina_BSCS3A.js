@@ -13,7 +13,7 @@ let section = "BSCS3A";
 let profElecGrade = 88;
 let programmingGrade = 89;
 let mobileProgGrade = 90;
-let attendance = 95;
+let attendance = 97;
 let schoolYear = "2026-2027";
 let status = "Active";
 
