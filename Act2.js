@@ -124,7 +124,7 @@ class Course {
     }
 
     enroll() {
-        console.log(`You are enrolled in ${this.courseName}.`);
+        console.log(`Youre enrolled in ${this.courseName}.`);
     }
 
     showCourse() {
