@@ -13,7 +13,7 @@ let grades = [85, 79, 90];
 let students = ["Shaina", "Maria", "Camell", "Renz"];
 
 //-------CONDITIONALS-------
-if (grades[0] >= 75) {
+if (grades[0] >= 80) {
     console.log(subjects[0] + ": PASSED");
 } else {
     console.log(subjects[0] + ": FAILED");
