@@ -44,16 +44,57 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Posts</Text>
-      <FlatList
-        data={posts}
-        keyExtractor={(item) => item.id.toString()}
-        renderItem={({ item }) => (
-          <View style={styles.item}>
-            <Text style={styles.title}>{item.title}</Text>
-            <Text>{item.body}</Text>
-          </View>
-        )}
-      />
+      
+<FlatList
+  data={posts}
+  keyExtractor={(item) => item.id.toString()}
+  contentContainerStyle={{ padding: 16 }}
+  renderItem={({ item }) => (
+    <View
+      style={{
+        backgroundColor: '#FFFFFF',
+        padding: 18,
+        marginBottom: 15,
+        borderRadius: 14,
+        elevation: 4,
+        borderLeftWidth: 5,
+        borderLeftColor: '#6366F1',
+      }}
+    >
+      <Text
+        style={{
+          fontSize: 12,
+          color: '#6366F1',
+          fontWeight: 'bold',
+          marginBottom: 8,
+        }}
+      >
+        POST #{item.id}
+      </Text>
+
+      <Text
+        style={{
+          fontSize: 18,
+          fontWeight: 'bold',
+          color: '#312E81',
+          marginBottom: 8,
+        }}
+      >
+        {item.title}
+      </Text>
+
+      <Text
+        style={{
+          fontSize: 14,
+          color: '#555555',
+          lineHeight: 22,
+        }}
+      >
+        {item.body}
+      </Text>
+    </View>
+  )}
+/>
     </View>
   );
 }
