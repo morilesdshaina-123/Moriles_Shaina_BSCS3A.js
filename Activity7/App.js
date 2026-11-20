@@ -72,6 +72,17 @@ export default function App() {
     setText(task.text);
   };
 
+  // TOGGLE task completion
+const toggleTask = (id) => {
+  updateTasks(
+    tasks.map((task) =>
+      task.id === id
+        ? { ...task, completed: !task.completed }
+        : task
+    )
+  );
+};
+
   // DELETE
   const deleteTask = (id) => {
     updateTasks(tasks.filter((t) => t.id !== id));
@@ -113,12 +124,20 @@ export default function App() {
         renderItem={({ item }) => (
           <View style={styles.item}>
             <Text style={styles.itemText}>{item.text}</Text>
-            <TouchableOpacity onPress={() => startEdit(item)}>
-              <Text style={styles.edit}>Edit</Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={() => deleteTask(item.id)}>
-              <Text style={styles.delete}>Delete</Text>
-            </TouchableOpacity>
+            <TouchableOpacity
+  style={{ flex: 1 }}
+  onPress={() => toggleTask(item.id)}
+>
+  <Text
+    style={[
+      styles.itemText,
+      item.completed && styles.completedTask,
+    ]}
+  >
+    {item.completed ? '✓ ' : '○ '}
+    {item.text}
+  </Text>
+</TouchableOpacity>
           </View>
         )}
       />
@@ -157,5 +176,11 @@ const styles = StyleSheet.create({
   edit: { color: '#2563eb', marginRight: 12 },
   delete: { color: '#dc2626' },
   empty: { textAlign: 'center', color: '#888', marginTop: 20 },
+
+  completedTask: {
+  textDecorationLine: 'line-through',
+  color: '#999',
+},
+
 });
 
