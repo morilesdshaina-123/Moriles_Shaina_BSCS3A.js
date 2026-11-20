@@ -7,6 +7,12 @@ const PRODUCTS = [
   { id: '2', name: 'Pen Set', price: 30.0 },
   { id: '3', name: 'Backpack', price: 200.0 },
   { id: '4', name: 'Water Bottle', price: 15.0 },
+  { id: '5', name: 'Pencil', price: 2.50, emoji: '✏️' },
+  { id: '6', name: 'Eraser', price: 1.50, emoji: '🧽' },
+  { id: '7', name: 'School Shoes', price: 25.00, emoji: '👟' },
+  { id: '8', name: 'Lunch Box', price: 10.00, emoji: '🍱' },
+  { id: '9', name: 'Ruler', price: 3.00, emoji: '📏' },
+  { id: '10', name: 'Calculator', price: 15.00, emoji: '🧮' },
 ];
 
 export default function ShopTab() {
