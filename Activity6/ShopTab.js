@@ -3,10 +3,10 @@ import { View, Text, TouchableOpacity, FlatList, StyleSheet } from 'react-native
 import { AppContext } from './AppContext';
 
 const PRODUCTS = [
-  { id: '1', name: 'Notebook', price: 4.5 },
-  { id: '2', name: 'Pen Set', price: 6.0 },
-  { id: '3', name: 'Backpack', price: 35.0 },
-  { id: '4', name: 'Water Bottle', price: 12.0 },
+  { id: '1', name: 'Notebook', price: 20.5 },
+  { id: '2', name: 'Pen Set', price: 30.0 },
+  { id: '3', name: 'Backpack', price: 200.0 },
+  { id: '4', name: 'Water Bottle', price: 15.0 },
 ];
 
 export default function ShopTab() {
