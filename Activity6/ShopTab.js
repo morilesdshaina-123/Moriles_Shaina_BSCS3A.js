@@ -3,16 +3,16 @@ import { View, Text, TouchableOpacity, FlatList, StyleSheet } from 'react-native
 import { AppContext } from './AppContext';
 
 const PRODUCTS = [
-  { id: '1', name: 'Notebook', price: 20.5 },
-  { id: '2', name: 'Pen Set', price: 30.0 },
-  { id: '3', name: 'Backpack', price: 200.0 },
-  { id: '4', name: 'Water Bottle', price: 15.0 },
-  { id: '5', name: 'Pencil', price: 2.50, emoji: '✏️' },
-  { id: '6', name: 'Eraser', price: 1.50, emoji: '🧽' },
-  { id: '7', name: 'School Shoes', price: 25.00, emoji: '👟' },
-  { id: '8', name: 'Lunch Box', price: 10.00, emoji: '🍱' },
-  { id: '9', name: 'Ruler', price: 3.00, emoji: '📏' },
-  { id: '10', name: 'Calculator', price: 15.00, emoji: '🧮' },
+  { id: '1', name: 'Notebook', price: 20.50, emoji: '📓' },
+  { id: '2', name: 'Pen Set', price: 30.00, emoji: '🖊️' },
+  { id: '3', name: 'Backpack', price: 500.00, emoji: '🎒' },
+  { id: '4', name: 'Water Bottle', price: 15.00, emoji: '🧴' },
+  { id: '5', name: 'Pencil', price: 10.50, emoji: '✏️' },
+  { id: '6', name: 'Eraser', price: 5.50, emoji: '🧽' },
+  { id: '7', name: 'School Shoes', price: 300.00, emoji: '👟' },
+  { id: '8', name: 'Lunch Box', price: 80.00, emoji: '🍱' },
+  { id: '9', name: 'Ruler', price: 50.00, emoji: '📏' },
+  { id: '10', name: 'Calculator', price: 250.00, emoji: '🧮' },
 ];
 
 export default function ShopTab() {
